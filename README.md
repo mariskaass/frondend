@@ -38,12 +38,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
+  https://www.rolls-roycemotorcars.com/en_GB/home.html
+
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  home  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  models 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -57,6 +59,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  1. het was best ingewikkeld om een screenreader te gebruiken. zeker omdat ik het nog nooit gebruikt had
+
+  2. de screenreaader las als een van de eerste dingen de links uit de footer voor en de website scrolde niet mee naar aar op de site deze stonden.
 
 </details>
 

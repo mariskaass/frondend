@@ -15,8 +15,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#ffffff;
+	--color-background:#222222;
+	--font: RR_regular;
 }
 
 
@@ -29,3 +30,31 @@
 
 /* jouw code */
 
+@font-face{
+	font-family: RR_regular;
+	src:url(/fonts/RivieraNights-Regular.woff);
+}
+
+@font-face {
+	font-family: RR_bold;
+	src: url(/fonts/RivieraNights-Bold.woff);
+}
+
+@font-face {
+	font-family: RR_light;
+	src: url(/fonts/RivieraNights-Light.woff);
+}
+
+p {
+	font-family: var(--font);
+	color: var(--color-text);
+}
+
+h2 {
+	font-family: var(--font);
+	color: var(--color-text);
+}
+
+body {
+	background-color:var(--color-background);
+}
