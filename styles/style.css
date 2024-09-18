@@ -18,6 +18,7 @@
 	--color-text:#ffffff;
 	--color-background:#222222;
 	--font: RR_regular;
+	--font_light: RR_light;
 }
 
 
@@ -29,7 +30,7 @@
 /****************/
 
 /* jouw code */
-
+/* fonts */
 @font-face{
 	font-family: RR_regular;
 	src:url(/fonts/RivieraNights-Regular.woff);
@@ -45,16 +46,166 @@
 	src: url(/fonts/RivieraNights-Light.woff);
 }
 
-p {
-	font-family: var(--font);
+/* generic things */
+* {
+	margin: 0;
 	color: var(--color-text);
-}
-
-h2 {
-	font-family: var(--font);
-	color: var(--color-text);
+	font-family: var(--font_light);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 body {
 	background-color:var(--color-background);
+}
+
+p {
+	text-transform: none;
+	letter-spacing: 0em;
+}
+
+
+a {
+	font-family: var(--font);
+	text-decoration: none;
+	letter-spacing: 0.2em;
+}
+
+/* ul {
+	list-style: none;
+
+} */
+
+/* the header */
+header {
+	height: 12vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	position: fixed;
+	width: 100vw;
+	align-items: center;
+}
+
+header a, header img {
+	height: 6vh;
+	justify-self: center;
+}
+
+header button {
+	background-color: transparent;
+	border: 0;
+	font-size: 2vh;
+	font-family: var(--font);
+	font-weight: 100;
+}
+
+/* section with articles */
+section {
+	overflow: hidden;
+	height: 100vh;
+}
+
+article {
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article:nth-of-type(1) {
+	background-image: url(/images/home_phone.jpg);
+	
+}
+
+article:nth-of-type(2) {
+	background-image: url(/images/spectre_phone.webp);
+}
+
+article:nth-of-type(3) {
+	background-image: url(/images/phantom_phone.webp);
+}
+
+article a {
+	background-color: #ffffff;
+	color: #222222;
+	padding: 1.2em 6em 1.2em 6em;
+	border-radius: 2em;
+	font-size: 0.6em;
+}
+
+/* section with the list */
+section:nth-of-type(2) {
+	height:fit-content;
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+
+
+section:nth-of-type(2) h3{
+	margin-left: 5.75vw;
+	font-size: 1.1em;
+	margin-top: 15vh;
+}
+
+section:nth-of-type(2) h4 {
+	font-size: 1em;
+	margin: 2vh 0 0 6vw;
+}
+
+section:nth-of-type(2) p {
+	margin: 1.5vh 2.5vw 8vh 2vw 
+}
+
+section:nth-of-type(2) img {
+	width: 90vw;
+	height: 40vh;
+	object-fit: cover;
+}
+
+section:nth-of-type(2) li::marker {
+	font-size: 1px;
+}
+
+
+
+/* footer */
+footer ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+}
+
+footer li {
+	font-size: 0.6em;
+	margin-bottom: 1.5vh;
+	max-width: 40vw;
+}
+
+
+/* classlist code voor het scrollen*/
+.snap_child {
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+}
+
+.snap_parent {
+	scroll-snap-type: y mandatory;
+	overflow: scroll;
+	height: 100vh;
+}
+
+/* classlist code voor veranderen van header */
+.header2 {
+	background-color: rgba(40, 40, 40, 0.50);
+	backdrop-filter: blur(1vh);
+	height: 8vh;
+}
+
+.header2 img {
+	height: 4vh;
+	margin-top: 1vh;
 }
