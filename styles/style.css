@@ -17,6 +17,8 @@
 	/* startje */
 	--color-text:#ffffff;
 	--color-background:#222222;
+	--color_blur:rgba(40, 40, 40, 0.50);
+	--color_cursor:rgba(100, 100, 100, 0);
 	--font: RR_regular;
 	--font_light: RR_light;
 }
@@ -75,7 +77,6 @@ a {
 ul {
 	list-style: none;
 	padding: 0;
-
 }
 
 /* the header */
@@ -86,6 +87,7 @@ header {
 	position: fixed;
 	width: 100vw;
 	align-items: center;
+	z-index: 20;
 }
 
 header a, header img {
@@ -99,6 +101,23 @@ header button {
 	font-size: 2vh;
 	font-family: var(--font);
 	font-weight: 100;
+}
+
+nav ul {
+	/* display: none; */
+	background-color: var(--color_blur);
+	backdrop-filter: blur(5em);
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding-top: 40vh;
+	display: none;
+}
+
+nav > button{
+	position: fixed;
+	top: 3vh;
+	z-index: 5;
 }
 
 /* section with articles */
@@ -130,8 +149,8 @@ article:nth-of-type(3) {
 }
 
 article a {
-	background-color: #ffffff;
-	color: #222222;
+	background-color: var(--color-text);
+	color: var(--color-background);
 	padding: 1.2em 6em 1.2em 6em;
 	border-radius: 2em;
 	font-size: 0.6em;
@@ -140,32 +159,38 @@ article a {
 /* section with the list */
 section:nth-of-type(2) {
 	height:fit-content;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-bottom: 4vh;
+}
+
+section:nth-of-type(2) ul{
 	display: grid;
 	grid-template-columns: 1fr;
-	margin-left: 5vw;
-	position: sticky;
-	top: 0;
 }
 
 section:nth-of-type(2) h3{
 	font-size: 1.1em;
 	margin-top: 15vh;
+	text-align: center;
 }
 
 section:nth-of-type(2) h4 {
 	font-size: 1em;
 	margin-top: 3vh;
+	margin-bottom: 1.5vh;
 }
 
-section:nth-of-type(2) p {
+section:nth-of-type(2) > p {
 	margin-top: 1.5vh;
+	text-align: center;
 }
 
 section:nth-of-type(2) img {
-	width: 90vw;
 	height: 40vh;
 	object-fit: cover;
 	margin-top: 8vh;
+	width: 100%;
 }
 
 /* footer */
@@ -196,7 +221,7 @@ footer li {
 
 /* classlist code voor veranderen van header */
 .header2 {
-	background-color: rgba(40, 40, 40, 0.50);
+	background-color: var(--color_blur);
 	backdrop-filter: blur(1vh);
 	height: 8vh;
 }
@@ -209,13 +234,51 @@ footer li {
 div {
 	width: 1em;
 	height: 1em;
-	background-color: rgba(100, 100, 100, 0);
+	background-color: var(--color_cursor);
 	/* background-image: url(/images/circle.png); */
 	position: absolute;
 	top: 0;
 	border-radius: 50%;
 	backdrop-filter: invert(100%) grayscale(100%);
-	/* mask: url(/images/circle.png) cover no-repeat fill-box; */
 	mask: radial-gradient(0.35em at center,#0000 98%,#000);
 	z-index: 200;
+}
+
+/* MEDIA QUERY */
+@media (pointer: coarse){ /*checken of hegt touchscreen is https://dev.to/cooty/a-new-way-to-test-for-touch-devices-without-javascript-enter-the-pointer-media-query-2kok */
+	div {
+		display: none;
+	}
+} 
+
+@media (min-width: 770px) {
+	article:nth-of-type(1) {
+		background-image: url(/images/home.jpg);
+		background-position: center;
+	}
+
+	article:nth-of-type(2) {
+		background-image: url(/images/spectre.webp);
+		background-position: center;
+	}
+
+	article:nth-of-type(3) {
+		background-image: url(/images/phantom.webp);
+		background-position: center;
+	}
+
+	section:nth-of-type(2) ul{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2vw;
+	}
+
+	footer ul {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (min-width: 1025px){
+	footer ul {
+		grid-template-columns: repeat(6, 1fr);
+	}
 }
