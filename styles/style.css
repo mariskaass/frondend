@@ -56,11 +56,15 @@
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	cursor: none;
+	
 }
 
 body {
 	background-color:var(--color-background);
+	height: 100vh;
 }
+
+
 
 p {
 	text-transform: none;
@@ -104,20 +108,90 @@ header button {
 }
 
 nav ul {
-	/* display: none; */
-	background-color: var(--color_blur);
-	backdrop-filter: blur(5em);
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	padding-top: 40vh;
-	display: none;
+	width: 100vw;
+	translate: -100vw;
 }
 
-nav > button{
+nav ul:first-of-type li:first-of-type {
+	margin-bottom: 1em;
+}
+
+nav button{
 	position: fixed;
 	top: 3vh;
-	z-index: 5;
+	z-index: 10;
+}
+
+nav button:nth-of-type(2) {
+	position: fixed;
+	top: 40vh;
+	margin-top: 1em;
+	font-size: 1em;
+	translate: -50vw;
+}
+
+nav ul:nth-of-type(2) {
+	height: 85vh;
+	top: 15vh;
+	left: 5vw;
+	padding: 0;
+}
+
+nav ul:nth-of-type(2) img {
+	height: 100%;
+}
+
+nav ul:nth-of-type(2) li {
+	width: 90vw;
+	height: 50vw;
+	background-size: cover;
+	margin-bottom: 3vh;
+}
+
+nav ul:nth-of-type(2) a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	padding: 0 2vw 2vw 0;
+
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(1) {
+	background-image: url(/images/model1_smal.jpeg);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(2) {
+	background-image: url(/images/model2_smal.jpeg);
+}		
+
+nav ul:nth-of-type(2) li:nth-of-type(3) {
+	background-image: url(/images/model3_smal.jpeg);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(4) {
+	background-image: url(/images/model4_smal.png);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(5) {
+	background-image: url(/images/model5_smal.jpeg);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(6) {
+	background-image: url(/images/model6_smal.jpeg);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(7) {
+	background-image: url(/images/model7_smal.jpeg);
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(8) {
+	background-image: url(/images/model8_smal.jpeg);
 }
 
 /* section with articles */
@@ -169,6 +243,10 @@ section:nth-of-type(2) ul{
 	grid-template-columns: 1fr;
 }
 
+section:nth-of-type(2) li {
+	border-left: var(--color-text) 0.5px solid;
+}
+
 section:nth-of-type(2) h3{
 	font-size: 1.1em;
 	margin-top: 15vh;
@@ -189,8 +267,8 @@ section:nth-of-type(2) > p {
 section:nth-of-type(2) img {
 	height: 40vh;
 	object-fit: cover;
-	margin-top: 8vh;
 	width: 100%;
+	margin-left: -0.5px;
 }
 
 /* footer */
@@ -198,16 +276,24 @@ footer ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	position: absolute;
+	width: 100vw;
+	justify-items: center;
+	
 }
 
 footer li {
 	font-size: 0.6em;
 	margin-bottom: 1.5vh;
-	max-width: 40vw;
+	width: 40%;
+
+}
+
+footer img {
+	height: 1em;
 }
 
 
-/* classlist code voor het scrollen*/
+/* classlist code voor het scrollen bron: https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php*/
 .snap_child {
 	scroll-snap-align: center;
 	scroll-snap-stop: always;
@@ -231,18 +317,34 @@ footer li {
 	margin-top: 1vh;
 }
 
+/* classlist code voor hamburger menu*/
+
+.menu_open {
+	translate: 0;
+	overflow: scroll;
+}
+
+.blur {
+	background-color: var(--color_blur);
+	backdrop-filter: blur(5em);
+	height: 100vh;
+	width: 100vw;
+}
+
+/* cursor styling */
 div {
 	width: 1em;
 	height: 1em;
 	background-color: var(--color_cursor);
-	/* background-image: url(/images/circle.png); */
 	position: absolute;
 	top: 0;
+	left: 0;
 	border-radius: 50%;
 	backdrop-filter: invert(100%) grayscale(100%);
 	mask: radial-gradient(0.35em at center,#0000 98%,#000);
 	z-index: 200;
 }
+
 
 /* MEDIA QUERY */
 @media (pointer: coarse){ /*checken of hegt touchscreen is https://dev.to/cooty/a-new-way-to-test-for-touch-devices-without-javascript-enter-the-pointer-media-query-2kok */
@@ -282,3 +384,14 @@ div {
 		grid-template-columns: repeat(6, 1fr);
 	}
 }
+
+
+/* .visually-hidden {
+	clip: rect(0 0 0 0);    
+	clip-path: inset(50%);    
+	height: 1px;    
+	overflow: hidden;    
+	position: absolute;    
+	white-space: nowrap;    
+	width: 1px;
+} */
