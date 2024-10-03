@@ -19,6 +19,7 @@
 	--color_text2:#343434;
 	--color-background:#ffffff;
 	--color_background2:#9d9d9d;
+	--color_background3: #6D30A7;
 	--color_blur:rgba(162, 160, 160, 0.5);
 	--color_cursor:rgba(100, 100, 100, 0);
 	--color_button:#ffffff;
@@ -33,6 +34,7 @@
 		--color_text2:#d2d1d1;
 		--color-background:#222222;
 		--color_background2:#343434;
+		--color_background3: #281432;
 		--color_blur:rgba(40, 40, 40, 0.50);
 		--color_cursor:rgba(100, 100, 100, 0);
 		--color_button: #343434;
@@ -51,17 +53,17 @@
 /* fonts */
 @font-face{
 	font-family: RR_regular;
-	src:url(/fonts/RivieraNights-Regular.woff);
+	src:url(../fonts/RivieraNights-Regular.woff);
 }
 
 @font-face {
 	font-family: RR_bold;
-	src: url(/fonts/RivieraNights-Bold.woff);
+	src: url(../fonts/RivieraNights-Bold.woff);
 }
 
 @font-face {
 	font-family: RR_light;
-	src: url(/fonts/RivieraNights-Light.woff);
+	src: url(../fonts/RivieraNights-Light.woff);
 }
 
 /* generic things */
@@ -350,13 +352,16 @@ section:nth-of-type(2) img {
 }
 
 /* COMPLAINTS PAGINA*/
+
 .complaints section {
 	height: fit-content;
+	background-color: var(--color_background3);
 }
 
 .complaints article {
 	background-image: none;
 	height: fit-content;
+	display: grid;
 }
 
 .complaints ul {
@@ -370,6 +375,35 @@ section:nth-of-type(2) img {
 
 .complaints p {
 	font-size: 0.7em;
+}
+
+.complaints h1 {
+	font-size: 2em;
+}
+
+.complaints h2 {
+	font-size: 1.5em;
+	padding-top: 8vh;
+}
+
+.complaints div:first-of-type {
+	height: 100vh;
+	background-image: url(../images/complaints.webp);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.complaints section:first-of-type {
+	text-align: center;
+}
+
+.complaints section:nth-of-type(2) {
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: left;
+
 }
 
 /* footer */
@@ -479,28 +513,28 @@ footer a {
 
 /* MEDIA QUERY */
 @media (pointer: coarse){ /*checken of hegt touchscreen is https://dev.to/cooty/a-new-way-to-test-for-touch-devices-without-javascript-enter-the-pointer-media-query-2kok */
-	div {
+	#cursor {
 		display: none;
 	}
 } 
 
 @media (min-width: 770px) {
-	article:nth-of-type(1) {
+	.home article:nth-of-type(1) {
 		background-image: url(../images/home.jpg);
 		background-position: center;
 	}
 
-	article:nth-of-type(2) {
+	.home article:nth-of-type(2) {
 		background-image: url(../images/spectre.webp);
 		background-position: center;
 	}
 
-	article:nth-of-type(3) {
+	.home article:nth-of-type(3) {
 		background-image: url(../images/phantom.webp);
 		background-position: center;
 	}
 
-	section:nth-of-type(2) ul{
+	.home section:nth-of-type(2) ul{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 2vw;
 	}
@@ -509,7 +543,7 @@ footer a {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	section:nth-of-type(2) li {
+	.home section:nth-of-type(2) li {
 		border-left: var(--color-text) 0.5px solid;
 	}	
 }
