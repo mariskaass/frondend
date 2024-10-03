@@ -181,41 +181,41 @@ nav ul:nth-of-type(2) a {
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(1) {
-	background-image: url(/images/model1_smal.jpeg);
+	background-image: url(../images/model1_smal.jpeg);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(2) {
-	background-image: url(/images/model2_smal.jpeg);
+	background-image: url(../images/model2_smal.jpeg);
 }		
 
 nav ul:nth-of-type(2) li:nth-of-type(3) {
-	background-image: url(/images/model3_smal.jpeg);
+	background-image: url(../images/model3_smal.jpeg);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(4) {
-	background-image: url(/images/model4_smal.png);
+	background-image: url(../images/model4_smal.png);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(5) {
-	background-image: url(/images/model5_smal.jpeg);
+	background-image: url(../images/model5_smal.jpeg);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(6) {
-	background-image: url(/images/model6_smal.jpeg);
+	background-image: url(../images/model6_smal.jpeg);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(7) {
-	background-image: url(/images/model7_smal.jpeg);
+	background-image: url(../images/model7_smal.jpeg);
 }
 
 nav ul:nth-of-type(2) li:nth-of-type(8) {
-	background-image: url(/images/model8_smal.jpeg);
+	background-image: url(../images/model8_smal.jpeg);
 }
 
 nav ul:nth-of-type(3) {
 	padding-top: 30vh;
 	width: 35vw;
-	background-image: url(/images/left-panel.jpg);
+	background-image: url(../images/left-panel.jpg);
 	display: none;
 }
 
@@ -236,7 +236,7 @@ nav div{
 	position: fixed;
 	left: 35vw;
 	top: 0;
-	background-image: url(/images/auto1.webp);
+	background-image: url(../images/auto1.webp);
 	background-size: cover;
 	background-position: center;
 	translate: -100vw;
@@ -284,7 +284,7 @@ video {
 }
 
 article:nth-of-type(1) {
-	background-image: url(/images/home_phone.jpg);
+	background-image: url(../images/home_phone.jpg);
 	
 }
 
@@ -295,12 +295,12 @@ article:nth-of-type(1) a, article:nth-of-type(1) h2, article:nth-of-type(1) p {
 
 
 article:nth-of-type(2) {
-	background-image: url(/images/spectre_phone.webp);
+	background-image: url(../images/spectre_phone.webp);
 	
 }
 
 article:nth-of-type(3) {
-	background-image: url(/images/phantom_phone.webp);
+	background-image: url(../images/phantom_phone.webp);
 }
 
 .home article a {
@@ -435,31 +435,31 @@ footer a {
 }
 
 .model1 {
-	background-image: url(/images/auto1.webp);
+	background-image: url(../images/auto1.webp);
 }
 
 .model2 {
-	background-image: url(/images/auto2.webp);
+	background-image: url(../images/auto2.webp);
 }
 
 .model3 {
-	background-image: url(/images/auto3.webp);
+	background-image: url(../images/auto3.webp);
 }
 
 .model4 {
-	background-image: url(/images/auto4.webp);
+	background-image: url(../images/auto4.webp);
 }
 
 .model5 {
-	background-image: url(/images/auto5.webp);
+	background-image: url(../images/auto5.webp);
 }
 
 .model6 {
-	background-image: url(/images/auto6.webp);
+	background-image: url(../images/auto6.webp);
 }
 
 .model7 {
-	background-image: url(/images/auto7.webp);
+	background-image: url(../images/auto7.webp);
 }
 
 /* cursor styling */
@@ -486,17 +486,17 @@ footer a {
 
 @media (min-width: 770px) {
 	article:nth-of-type(1) {
-		background-image: url(/images/home.jpg);
+		background-image: url(../images/home.jpg);
 		background-position: center;
 	}
 
 	article:nth-of-type(2) {
-		background-image: url(/images/spectre.webp);
+		background-image: url(../images/spectre.webp);
 		background-position: center;
 	}
 
 	article:nth-of-type(3) {
-		background-image: url(/images/phantom.webp);
+		background-image: url(../images/phantom.webp);
 		background-position: center;
 	}
 
