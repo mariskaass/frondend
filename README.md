@@ -39,14 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   https://www.rolls-roycemotorcars.com/en_GB/home.html
-
+[text](https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/rollsroycemotorcars_com/6-11-complaints-procedure/page-properties/rrmc-complaints-procedures-hero-m.jpg/jcr%3Acontent/renditions/original)
   #### Screenshot(s) van de eerste pagina (small screen): 
   home  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/home.png" width="375px" alt="de homepagina van de website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   models 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/complaints.png" width="375px" alt="de complaints pagina">
  
 </details>
 
@@ -63,6 +63,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   2. de screenreaader las als een van de eerste dingen de links uit de footer voor en de website scrolde niet mee naar aar op de site deze stonden.
 
+  3. er is wel een visuele aanduiding voor de focus maar de website scrolt vaak niet automatisch door naar waar op de website de focus ligt dus
+
+  4. de website houd ook geen rekening met de voorkeuren van de gebruiker. er is bijvoorbeeld geen verandering te zien al kies je darkmode of lightmode ook is er niks gedaan voor reduced motion zoals minder animaties of geen achtergrond videos
+
+  5. 
 </details>
 
 
@@ -93,26 +98,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ik heb al een redelijk goed begin gemaakt voor mijn eerste pagina door de html te schrijven en alvast een beetje css toe te passen 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  ik ben goed onderweg
+  had tot nu toe niet echt vragen
 
 </details>
 
@@ -126,26 +119,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  het schrijven van de code gaat prima maar ik heb wat moeite met het kiezen van een 2e pagina
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  -ik mag niet de 2e laag van het hamburgermenu kiezen als 2e pagina
+  
 
 </details>
 
@@ -173,26 +155,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ik heb wat problemen met het maken vn een custom curser verder gaat het wel oke
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  -heb wat ideeen voor de cursor
+  -ik loop mischien een beetje achter
 
 </details>
 

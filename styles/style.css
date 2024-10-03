@@ -16,13 +16,29 @@
 :root {
 	/* startje */
 	--color-text:#ffffff;
-	--color-background:#222222;
-	--color_blur:rgba(40, 40, 40, 0.50);
+	--color_text2:#343434;
+	--color-background:#ffffff;
+	--color_background2:#9d9d9d;
+	--color_blur:rgba(162, 160, 160, 0.5);
 	--color_cursor:rgba(100, 100, 100, 0);
+	--color_button:#ffffff;
+	--color_button2: #6D30A7;
 	--font: RR_regular;
 	--font_light: RR_light;
 }
 
+@media(prefers-color-scheme: dark) {
+	:root {
+		--color-text:#ffffff;
+		--color_text2:#d2d1d1;
+		--color-background:#222222;
+		--color_background2:#343434;
+		--color_blur:rgba(40, 40, 40, 0.50);
+		--color_cursor:rgba(100, 100, 100, 0);
+		--color_button: #343434;
+		--color_button2: #281432;
+	}
+}
 
 
 
@@ -130,8 +146,10 @@ nav button:nth-of-type(2) {
 	position: fixed;
 	top: 40vh;
 	margin-top: 1em;
+	padding: 0;
 	font-size: 1em;
 	translate: -50vw;
+
 }
 
 nav ul:nth-of-type(2) {
@@ -194,6 +212,48 @@ nav ul:nth-of-type(2) li:nth-of-type(8) {
 	background-image: url(/images/model8_smal.jpeg);
 }
 
+nav ul:nth-of-type(3) {
+	padding-top: 30vh;
+	width: 35vw;
+	background-image: url(/images/left-panel.jpg);
+	display: none;
+}
+
+nav ul:nth-of-type(3) li {
+	height: 1em;
+	display: flex;
+	margin-top: 2em;
+}
+
+nav ul:nth-of-type(3) button {
+	position: relative;
+}
+
+nav div{
+	background-color: #000;
+	width: 65vw;
+	height: 100vh;
+	position: fixed;
+	left: 35vw;
+	top: 0;
+	background-image: url(/images/auto1.webp);
+	background-size: cover;
+	background-position: center;
+	translate: -100vw;
+	display: none;
+	
+}
+
+#right_pictures a {
+	margin: 85vh 22vw 0 22vw;
+	width: 21vw;
+	background-color: var(--color_button2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2em;
+}
+
 /* section with articles */
 section {
 	overflow: hidden;
@@ -207,6 +267,20 @@ article {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+video {
+	object-fit: cover;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
 }
 
 article:nth-of-type(1) {
@@ -214,17 +288,24 @@ article:nth-of-type(1) {
 	
 }
 
+article:nth-of-type(1) a, article:nth-of-type(1) h2, article:nth-of-type(1) p {
+	position: relative;
+	z-index: 2;
+}
+
+
 article:nth-of-type(2) {
 	background-image: url(/images/spectre_phone.webp);
+	
 }
 
 article:nth-of-type(3) {
 	background-image: url(/images/phantom_phone.webp);
 }
 
-article a {
-	background-color: var(--color-text);
-	color: var(--color-background);
+.home article a {
+	background-color: var(--color_button);
+	color: var(--color_text2);
 	padding: 1.2em 6em 1.2em 6em;
 	border-radius: 2em;
 	font-size: 0.6em;
@@ -233,9 +314,9 @@ article a {
 /* section with the list */
 section:nth-of-type(2) {
 	height:fit-content;
-	width: 90vw;
-	margin-left: 5vw;
-	margin-bottom: 4vh;
+	width: 100vw;
+	padding: 0 2vw 10vh 2vw;
+	background-color: var(--color_background2);
 }
 
 section:nth-of-type(2) ul{
@@ -243,9 +324,6 @@ section:nth-of-type(2) ul{
 	grid-template-columns: 1fr;
 }
 
-section:nth-of-type(2) li {
-	border-left: var(--color-text) 0.5px solid;
-}
 
 section:nth-of-type(2) h3{
 	font-size: 1.1em;
@@ -271,25 +349,50 @@ section:nth-of-type(2) img {
 	margin-left: -0.5px;
 }
 
+/* COMPLAINTS PAGINA*/
+.complaints section {
+	height: fit-content;
+}
+
+.complaints article {
+	background-image: none;
+	height: fit-content;
+}
+
+.complaints ul {
+	height: fit-content;
+}
+
+.complaints li {
+	height: fit-content;
+	font-size: 0.6em;
+}
+
+.complaints p {
+	font-size: 0.7em;
+}
+
 /* footer */
 footer ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	position: absolute;
 	width: 100vw;
 	justify-items: center;
-	
+	background-color: var(--color-background);
 }
 
 footer li {
 	font-size: 0.6em;
 	margin-bottom: 1.5vh;
 	width: 40%;
-
 }
 
 footer img {
 	height: 1em;
+}
+
+footer a {
+	color: var(--color_text2);
 }
 
 
@@ -331,8 +434,36 @@ footer img {
 	width: 100vw;
 }
 
+.model1 {
+	background-image: url(/images/auto1.webp);
+}
+
+.model2 {
+	background-image: url(/images/auto2.webp);
+}
+
+.model3 {
+	background-image: url(/images/auto3.webp);
+}
+
+.model4 {
+	background-image: url(/images/auto4.webp);
+}
+
+.model5 {
+	background-image: url(/images/auto5.webp);
+}
+
+.model6 {
+	background-image: url(/images/auto6.webp);
+}
+
+.model7 {
+	background-image: url(/images/auto7.webp);
+}
+
 /* cursor styling */
-div {
+#cursor {
 	width: 1em;
 	height: 1em;
 	background-color: var(--color_cursor);
@@ -377,16 +508,38 @@ div {
 	footer ul {
 		grid-template-columns: repeat(4, 1fr);
 	}
+
+	section:nth-of-type(2) li {
+		border-left: var(--color-text) 0.5px solid;
+	}	
 }
 
 @media (min-width: 1025px){
 	footer ul {
 		grid-template-columns: repeat(6, 1fr);
 	}
+
+	nav ul:nth-of-type(3) {
+		display: block;
+	}
+	
+	nav div {
+		display: block;
+	}
+
+	nav ul:nth-of-type(2) {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	video {
+		display: none;
+	}
 }
 
 
-/* .visually-hidden {
+.hidden {
 	clip: rect(0 0 0 0);    
 	clip-path: inset(50%);    
 	height: 1px;    
@@ -394,4 +547,4 @@ div {
 	position: absolute;    
 	white-space: nowrap;    
 	width: 1px;
-} */
+}
