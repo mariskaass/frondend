@@ -21,6 +21,7 @@ const model4 = document.getElementsByClassName('model_knop')[3];
 const model5 = document.getElementsByClassName('model_knop')[4];
 const model6 = document.getElementsByClassName('model_knop')[5];
 const model7 = document.getElementsByClassName('model_knop')[6];
+
 //VARIABELEN
 let state_header = true;
 let state_menu = false; 
@@ -88,11 +89,11 @@ function scrollsnap() {
 }
 
 function header_change() {
-    if (section_snap.scrollTop > (window.innerHeight)*0.3 && state_header == false ) {
+    if (section_snap.scrollTop > (window.innerHeight)*0.3 && state_header == false) {
         header.classList.add('header2');
         logo.src = "/images/vleugel_popetje.svg";
         state_header = true;
-    } else if (section_snap.scrollTop < (window.innerHeight)*0.3 && state_header == true ){
+    } else if (section_snap.scrollTop < (window.innerHeight)*0.3 && state_header == true){
         header.classList.remove('header2');
         logo.src = "/images/RR.svg";
         state_header = false;
