@@ -93,7 +93,7 @@ p {
 
 
 a {
-	font-family: var(--font);
+	font-family: var(--font_light);
 	text-decoration: none;
 	letter-spacing: 0.2em;
 }
