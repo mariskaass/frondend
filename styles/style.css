@@ -63,7 +63,7 @@
 
 @font-face {
 	font-family: RR_light;
-	src: url(../fonts/RivieraNights-Light.woff);
+	src: url(../fonts/RivieraNights-UltraLight.woff);
 }
 
 /* generic things */
@@ -258,7 +258,7 @@ nav div{
 }
 
 /* section with articles */
-section {
+.home section {
 	overflow: hidden;
 	height: 100vh;
 }
@@ -291,7 +291,7 @@ article:nth-of-type(1) {
 	
 }
 
-article:nth-of-type(1) a, article:nth-of-type(1) h2, article:nth-of-type(1) p {
+.home article:nth-of-type(1) a, .home article:nth-of-type(1) h2, .home article:nth-of-type(1) p {
 	position: relative;
 	z-index: 2;
 }
@@ -354,6 +354,7 @@ section:nth-of-type(2) img {
 
 /* COMPLAINTS PAGINA*/
 
+
 .complaints section {
 	height: fit-content;
 	background-color: var(--color_background3);
@@ -363,39 +364,65 @@ section:nth-of-type(2) img {
 	background-image: none;
 	height: fit-content;
 	display: grid;
+	padding: 1em;
 }
 
 .complaints ul {
 	height: fit-content;
+	margin-top: 3em;
 }
 
 .complaints li {
 	height: fit-content;
-	font-size: 0.6em;
+	font-size: 0.7em;
+	margin-top: 1em;
+}
+
+.complaints li:first-of-type{
+	font-size: 0.9em;
 }
 
 .complaints p {
-	font-size: 0.7em;
+	font-size: 0.9em;
+	line-height: 1.8em;
 }
 
 .complaints h1 {
 	font-size: 2em;
-	text-align: center;
 }
 
 .complaints h2 {
 	font-size: 1.5em;
 	padding-top: 8vh;
+	text-align: left;
+	margin-bottom: 1em;
+	font-size: 1.2em;
 }
 
-.complaints div:first-of-type {
+.complaints a {
+	text-decoration: underline;
+}
+
+.complaints section:first-of-type h2 {
+	text-align: center;
+}
+
+.complaints section > div:first-of-type {
 	height: 100vh;
 	background-image: url(../images/complaints.webp);
 	background-size: cover;
+	background-position: center;
+	
+}
+
+.complaints div > div {
+	height: 100vh;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 
 .complaints section:first-of-type {
 	text-align: center;
@@ -405,6 +432,13 @@ section:nth-of-type(2) img {
 	text-align: left;
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+.complaints section:nth-of-type(2) article:first-of-type p:last-of-type {
+	font-size: 0.7em;
+	text-transform: uppercase;
+	margin-top: 3em;
+	line-height: 2em;
 }
 
 /* footer */
@@ -497,6 +531,8 @@ footer a {
 	background-image: url(../images/auto7.webp);
 }
 
+/* classlist complaints */
+
 /* cursor styling */
 #cursor {
 	width: 1em;
@@ -540,19 +576,30 @@ footer a {
 		grid-column-gap: 2vw;
 	}
 
+	.home section:nth-of-type(2) li {
+		border-left: var(--color-text) 0.5px solid;
+	}	
+
+	.complaints article {
+		padding: 1em 5em 0 5em;
+	}
+
+	.complaints section:nth-of-type(2) p, .complaints section:nth-of-type(2) ul {
+		padding-left: 20vw;
+	}
+
+	.complaints section > div:first-of-type {
+		background-image: url(../images/complaints_mid.webp);
+	}
+
+
 	footer ul {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.home section:nth-of-type(2) li {
-		border-left: var(--color-text) 0.5px solid;
-	}	
 }
 
 @media (min-width: 1025px){
-	footer ul {
-		grid-template-columns: repeat(6, 1fr);
-	}
 
 	nav ul:nth-of-type(3) {
 		display: block;
@@ -565,6 +612,37 @@ footer a {
 	nav ul:nth-of-type(2) {
 		display: none;
 	}
+
+	.complaints section:nth-of-type(2) article {
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: 1fr;
+		align-items: unset;
+		margin-top: 20vh;
+		
+	}
+
+	.complaints section:nth-of-type(2) p, .complaints section:nth-of-type(2) ul {
+		grid-column-start: 2;
+	}
+
+	.complaints section:nth-of-type(2) h2 {
+		position: sticky;
+		top: 40vh;
+		padding: 0;
+		height: 2em;
+		margin: 0;
+		
+	}
+
+	.complaints section > div:first-of-type {
+		background-image: url(../images/complaints_big.webp);
+	}
+
+
+	footer ul {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
 }
 
 @media (prefers-reduced-motion) {
