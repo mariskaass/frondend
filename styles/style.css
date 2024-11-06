@@ -53,17 +53,17 @@
 /* fonts */
 @font-face{
 	font-family: RR_regular;
-	src:url(./fonts/RivieraNights-Regular.woff);
+	src:url(../fonts/RivieraNights-Regular.woff);
 }
 
 @font-face {
 	font-family: RR_bold;
-	src: url(./fonts/RivieraNights-Bold.woff);
+	src:url(../fonts/RivieraNights-Bold.woff);
 }
 
 @font-face {
 	font-family: RR_light;
-	src: url(./fonts/RivieraNights-UltraLight.woff);
+	src:url(../fonts/RivieraNights-UltraLight.woff);
 }
 
 /* generic things */
