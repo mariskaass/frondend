@@ -23,11 +23,11 @@ function scrollsnap() {
 function header_change() {
     if (section_snap.scrollTop > (window.innerHeight)*0.3 && state_header == false) {
         header_i.classList.add('header2');
-        logo_i.src = "/images/vleugel_popetje.svg";
+        logo_i.src = "./images/vleugel_popetje.svg";
         state_header = true;
     } else if (section_snap.scrollTop < (window.innerHeight)*0.3 && state_header == true){
         header_i.classList.remove('header2');
-        logo_i.src = "/images/RR.svg";
+        logo_i.src = "./images/RR.svg";
         state_header = false;
     }
 }  

@@ -12,7 +12,7 @@ let state_header = true;
 function header_change() {
     if (window.scrollY > (window.innerHeight)*0.3 && state_header == false) {
         header_C.classList.add('header2');
-        logo_C.src = "images/vleugel_popetje.svg";
+        logo_C.src = "./images/vleugel_popetje.svg";
         state_header = true;
     } else if (window.scrollY < (window.innerHeight)*0.3 && state_header == true){
         header_C.classList.remove('header2');
