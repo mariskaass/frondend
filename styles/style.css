@@ -56,14 +56,14 @@
 	src:url(../fonts/RivieraNights-Regular.woff);
 }
 
-@font-face {
+/* @font-face {
 	font-family: RR_bold;
 	src:url(../fonts/RivieraNights-Bold.woff);
-}
+} */
 
-@font-face {
+@font-face{
 	font-family: RR_light;
-	src:url(../fonts/RivieraNights-UltraLight.woff);
+	src:url(../fonts/RivieraNights-Ultralight.woff);
 }
 
 /* generic things */
