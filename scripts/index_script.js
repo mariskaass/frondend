@@ -1,7 +1,7 @@
 const articles = document.getElementsByClassName('snap_article');
 const section_snap = document.getElementById('snap');
-const header = document.querySelector('header');
-const logo = document.getElementById('logo');
+const header_i = document.querySelector('header');
+const logo_i = document.getElementById('logo');
 
 let state_header = true;
 
@@ -22,12 +22,12 @@ function scrollsnap() {
 
 function header_change() {
     if (section_snap.scrollTop > (window.innerHeight)*0.3 && state_header == false) {
-        header.classList.add('header2');
-        logo.src = "/images/vleugel_popetje.svg";
+        header_i.classList.add('header2');
+        logo_i.src = "/images/vleugel_popetje.svg";
         state_header = true;
     } else if (section_snap.scrollTop < (window.innerHeight)*0.3 && state_header == true){
-        header.classList.remove('header2');
-        logo.src = "/images/RR.svg";
+        header_i.classList.remove('header2');
+        logo_i.src = "/images/RR.svg";
         state_header = false;
     }
 }  
