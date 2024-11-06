@@ -204,8 +204,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. (https://www.rolls-roycemotorcars.com/en_GB/home.html)
+  2. [bron 2](https://stackoverflow.com/questions/15040297/clear-element-classlist)
+  3. https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+  5. https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
+  6. https://www.youtube.com/watch?v=M-3x9McPyCU
+  7.  https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+  8. https://css-tricks.com/practical-css-scroll-snapping/
+  9. https://stackoverflow.com/questions/27006979/how-to-use-vh-units-instead-of-pixels-for-scrolltop-functions
+  10. https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+  11. https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop
+  12. https://dev.to/mattmarquise/how-to-create-a-custom-circular-cursor-for-your-website-4i7p
+  13. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+  14. https://dev.to/cooty/a-new-way-to-test-for-touch-devices-without-javascript-enter-the-pointer-media-query-2kok
+  15. 
 
 </details>
