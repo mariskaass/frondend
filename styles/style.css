@@ -545,7 +545,7 @@ footer a {
 }
 
 .model5 {
-	background-image: url(../images/auto5.webp);
+	background-image: url(images/auto5.webp);
 }
 
 .model6 {
@@ -634,7 +634,7 @@ footer a {
 	nav div:first-of-type {
 		display: block;
 	}
-	
+
 	.models_open {
 		right: 68vw;
 	}
