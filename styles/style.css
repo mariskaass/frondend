@@ -88,12 +88,11 @@ body {
 p {
 	text-transform: none;
 	letter-spacing: 0em;
-	font-family: var(--font);
 }
 
 
 a {
-	font-family: var(--font_light);
+	font-family: var(--font);
 	text-decoration: none;
 	letter-spacing: 0.2em;
 }
