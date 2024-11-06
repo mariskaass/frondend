@@ -1,5 +1,9 @@
 const articles = document.getElementsByClassName('snap_article');
 const section_snap = document.getElementById('snap');
+const header = document.querySelector('header');
+const logo = document.getElementById('logo');
+
+let state_header = true;
 
 //scrollen veranderen
 function scrollsnap() {

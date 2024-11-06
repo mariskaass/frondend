@@ -258,9 +258,14 @@ nav div{
 }
 
 /* section with articles */
-.home section {
+section {
 	overflow: hidden;
 	height: 100vh;
+}
+
+.complaints section {
+	height: fit-content;
+	overflow: unset;
 }
 
 article {
